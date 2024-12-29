@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+}
+
+header {
+    background-color: #2dcde8;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+#content-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+#content {
+    flex: 3;
+    margin-right: 20px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+article h2 {
+    color: #0097a7;
+    margin-bottom: 10px;
+}
+
+article p {
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+section h3 {
+    margin-top: 15px;
+    color: #00796b;
+}
+
+aside {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    color: #0097a7;
+}
+
+aside figure img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+aside table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+aside table th {
+    text-align: left;
+    color: #00796b;
+    padding: 5px 0;
+}
+
+aside table td {
+    padding: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2dcde8;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Gaya untuk tombol kembali */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #content-wrapper {
+        flex-direction: column;
+    }
+
+    #content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        padding: 10px }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    #content, aside {
+        padding: 15px;
+    }
+
+    article h2 {
+        font-size: 1.5rem;
+    }
+
+    section h3 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    article h2 {
+        font-size: 1.2rem;
+    }
+
+    section h3 {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
